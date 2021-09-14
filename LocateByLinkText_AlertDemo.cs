@@ -8,21 +8,25 @@ using System.Threading.Tasks;
 
 namespace Selenium_Project
 {
-    class LaunchChrome
+    class LocateByLinkText_AlertDemo
     {
         static void Main(string[] args)
         {
 
-            Console.WriteLine("Hello Chrome browser is launched");
+            Console.WriteLine("Hello this is locate by LinkText practical");
             //Launch Browser
             IWebDriver driver = new ChromeDriver("C:\\Users\\sadda\\OneDrive\\Desktop\\Selenium Practice");
-           
+
             //Maximize browser
             driver.Manage().Window.Maximize();
-            
+
             //Open url(open google)
-            driver.Url = "https://www.google.co.in/";
-            
+            driver.Url = "https://www.w3schools.com/jsref/met_win_alert.asp";
+
+            //By LinkText
+            driver.FindElement(By.LinkText("Try it Yourself »")).Click();
+            driver.FindElement(By.LinkText("Try it")).Click();
+
             //Close Browser
             //driver.Close();
         }

@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>Selenium_Project.LocateByID</StartupObject>
+    <StartupObject>Selenium_Project.LocateByLinkText_AlertDemo</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -50,8 +50,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="LaunchMozillaFirefox.cs" />
     <Compile Include="LocateByID.cs" />
     <Compile Include="LocateByLinkText.cs" />
+    <Compile Include="LocateByLinkText_AlertDemo.cs" />
     <Compile Include="LocateByName.cs" />
     <Compile Include="LaunchChrome.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
