@@ -25,7 +25,7 @@ namespace Selenium_Project
             // inputbox.SendKeys("Javid");
 
             driver.FindElement(By.Id("firstName")).SendKeys("Javid");
-            driver.Close();
+            //driver.Close();
         }
     }
 }
