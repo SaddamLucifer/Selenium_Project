@@ -28,6 +28,7 @@ namespace Selenium_Project
             searchbox.SendKeys("Selenium");
 
             //alternate way for entering text in search box
+            //driver.FindElement(By.Name("q")).SendKeys("Selenium");
 
             //Close Browser
             driver.Close();

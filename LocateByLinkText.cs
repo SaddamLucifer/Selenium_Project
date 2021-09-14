@@ -13,7 +13,7 @@ namespace Selenium_Project
         static void Main(string[] args)
         {
 
-            Console.WriteLine("hello Chrome browser is launched");
+            Console.WriteLine("Hello this find by LinkText practical");
             //Launch Browser
             IWebDriver driver = new ChromeDriver("C:\\Users\\sadda\\OneDrive\\Desktop\\Selenium Practice");
 
@@ -27,7 +27,7 @@ namespace Selenium_Project
             driver.FindElement(By.LinkText("Gmail")).Click();
 
             //Close Browser
-            //driver.Close();
+            driver.Close();
         }
     }
 }
