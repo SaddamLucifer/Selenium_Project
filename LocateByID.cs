@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace Selenium_Project
@@ -25,7 +26,10 @@ namespace Selenium_Project
             // inputbox.SendKeys("Javid");
 
             driver.FindElement(By.Id("firstName")).SendKeys("Javid");
-            //driver.Close();
+
+            Thread.Sleep(3000);
+            //Close Browser
+            driver.Close();
         }
     }
 }

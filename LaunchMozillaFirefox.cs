@@ -24,7 +24,7 @@ namespace Selenium_Project
             driver.Url = "https://www.instagram.com/";
 
             //Close Browser
-            //driver.Close();
+            driver.Close();
         }
     }
 }

@@ -9,12 +9,12 @@ using System.Threading.Tasks;
 
 namespace Selenium_Project
 {
-    class LocateByLinkText_AlertDemo
+    class AbsoluteXpath
     {
         static void Main(string[] args)
         {
 
-            Console.WriteLine("Hello this is locate by LinkText practical");
+            Console.WriteLine("Hello this is Locate by Absolute XPath practical");
             //Launch Browser
             IWebDriver driver = new ChromeDriver("C:\\Users\\sadda\\OneDrive\\Desktop\\Selenium Practice");
 
@@ -22,11 +22,10 @@ namespace Selenium_Project
             driver.Manage().Window.Maximize();
 
             //Open url(open google)
-            driver.Url = "https://www.w3schools.com/jsref/met_win_alert.asp";
+            driver.Url = "https://www.google.co.in/";
 
             //By LinkText
-            driver.FindElement(By.LinkText("Try it Yourself »")).Click();
-            driver.FindElement(By.LinkText("Try it")).Click();
+            driver.FindElement(By.XPath("/html/body/div[1]/div[3]/form/div[1]/div[1]/div[1]/div/div[2]/input")).SendKeys("Selenium");
 
             Thread.Sleep(3000);
             //Close Browser

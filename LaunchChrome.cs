@@ -24,7 +24,7 @@ namespace Selenium_Project
             driver.Url = "https://www.google.co.in/";
             
             //Close Browser
-            //driver.Close();
+            driver.Close();
         }
     }
 }
