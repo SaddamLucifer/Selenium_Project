@@ -31,15 +31,15 @@ namespace Selenium_Project
             Console.WriteLine(links.Count);
 
             //Printing all Links using Text
-            for (int i = 0; i < links.Count; i++)
-            {
-                Console.WriteLine(links.ElementAt(i).Text);
-            }
-            
-            //foreach (IWebElement item in links)
+            //for (int i = 0; i < links.Count; i++)
             //{
-            //    Console.WriteLine(links.Text);
+            //    Console.WriteLine(links.ElementAt(i).Text);
             //}
+
+            foreach (IWebElement item in links)
+            {
+                Console.WriteLine(item.Text);
+            }
 
             Thread.Sleep(3000);
             //Closing Browser
