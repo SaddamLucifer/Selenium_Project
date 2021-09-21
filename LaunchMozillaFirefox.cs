@@ -15,8 +15,8 @@ namespace Selenium_Project
 
             Console.WriteLine("Hello Mozilla-Firefox browser is launched");
             //Launch Browser
-            IWebDriver driver = new FirefoxDriver("C:\\Users\\sadda\\OneDrive\\Desktop\\Selenium Practice");
-
+            //IWebDriver driver = new FirefoxDriver("C:\\Users\\sadda\\OneDrive\\Desktop\\Selenium Practice");
+            IWebDriver driver = new FirefoxDriver();
             //Maximize browser
             driver.Manage().Window.Maximize();
 
@@ -24,7 +24,7 @@ namespace Selenium_Project
             driver.Url = "https://www.instagram.com/";
 
             //Close Browser
-            driver.Close();
+            driver.Quit();
         }
     }
 }

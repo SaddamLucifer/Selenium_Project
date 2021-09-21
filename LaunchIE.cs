@@ -1,5 +1,6 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
+using OpenQA.Selenium.IE;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Selenium_Project
 {
-    class LaunchChrome
+    class LaunchIE
     {
         static void Main(string[] args)
         {
@@ -16,7 +17,7 @@ namespace Selenium_Project
             Console.WriteLine("Hello Chrome browser is launched");
             //Launch Browser
             //IWebDriver driver = new ChromeDriver("C:\\Users\\sadda\\OneDrive\\Desktop\\Selenium Practice");
-            IWebDriver driver = new ChromeDriver();
+            IWebDriver driver = new InternetExplorerDriver();
             //Maximize browser
             driver.Manage().Window.Maximize();
             
